@@ -138,6 +138,8 @@ header h1{
     background-color: black;
     color:white;
 }
+
+
 .prueba3 h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 3.5em;
@@ -220,12 +222,47 @@ header h1{
 /*Este codigo sirve por si la persona quiere pausar TODAS las animaciones*/
 @media (prefers-reduced-motion: reduce) {
     *, ::before, ::after {
-      animation-delay: -1ms !important;
-      animation-duration: 1ms !important;
-      animation-iteration-count: 1 !important;
-      background-attachment: initial !important;
-      scroll-behavior: auto !important;
-      transition-duration: 0s !important;
-      transition-delay: 0s !important;
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
     }
   }
+
+/* Prueba 4*/
+.prueba4{
+    align-items: end;
+}
+.menu-prueba4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.boxmenu{
+    background: blueviolet;
+    display: flex;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    transition: 1s;
+    color: blueviolet;
+    justify-content: space-between;
+    padding-right: 5px;
+    border-radius: 10px;
+    margin: 1px 2px;
+}
+.imgboxmenu{
+    width: 60px;
+    height: 60px;
+}
+
+.boxmenu:hover{
+    width: 160px;
+    color: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
