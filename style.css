@@ -6,6 +6,9 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* Primera prueba*/
+    /*Preparamos el contendor*/
 .prueba1{
     margin: 20px;
     border: 2px solid black;
@@ -21,6 +24,7 @@ body{
     padding: 0;
     top: 5%;
 }
+/*Creamos el circulo*/
 #cir-prueba1{
     height: 100px;
     width: 100px;
@@ -50,6 +54,7 @@ body{
     }
 }
 
+/*Prueba 2*/
 .prueba2{
     margin: 20px;
     border: 2px solid black;
@@ -64,4 +69,33 @@ body{
     margin: 0;
     padding: 0;
     top: 5%;
+}
+/*Estilizamos el texto*/
+.prueba2 h2{
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.3em;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: fit-content
+}
+
+.prueba2 div{
+    background: white;
+    overflow: hidden;
+    border-right: 1px solid black ;
+    white-space: nowrap;
+    width: 20%;
+    animation: typewriter 2s steps(25) forwards  1s ;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%
+      }
+      to {
+        width: 100%;
+        border-style: none;
+      }
+    
 }
