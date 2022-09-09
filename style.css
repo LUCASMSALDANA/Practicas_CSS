@@ -39,11 +39,29 @@ body{
     0%{
         background-color: black;
         height: 100px;
+        opacity: 0%;
     }
     100%{
         background-color: red;
         height: 120px;
         width: 120px;
-        left: calc(100% - 120px)
+        left: calc(100% - 120px);
+        opacity: 100%;
     }
+}
+
+.prueba2{
+    margin: 20px;
+    border: 2px solid black;
+    width: 40vw;
+    height:40vh;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+.prueba2 h1 {
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    top: 5%;
 }
