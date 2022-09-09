@@ -6,24 +6,55 @@ body{
     margin: 0;
     padding: 0;
 }
+/*Header*/
+header{
+    background-color: black;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    font-family: 'JetBrains Mono', monospace;
+}
 
-/* Primera prueba*/
-    /*Preparamos el contendor*/
-.prueba1{
+header img{
+    height: 150px;
+    margin: 0 20px;
+}
+header h1{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: green;
+}
+/*Fin del Header*/
+
+
+/* Definimos el Display de las filas*/
+.fila{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/*Definimos el contenedor*/
+.container{
     margin: 20px;
     border: 2px solid black;
     width: 40vw;
     height:40vh;
+    text-align: center;
+    position: relative;
     display: grid;
     place-items: center;
-    position: relative;
 }
-.prueba1 h1{
+/*Definimos los h1 del contenedor*/
+.container h1{
     position:absolute;
     margin: 0;
     padding: 0;
     top: 5%;
 }
+
+/* Primera prueba*/
+
 /*Creamos el circulo*/
 #cir-prueba1{
     height: 100px;
@@ -56,22 +87,12 @@ body{
 
 /*Prueba 2*/
 .prueba2{
-    margin: 20px;
-    border: 2px solid black;
-    width: 40vw;
-    height: 40vh;
     display: flex;
     flex-direction: column;
-    position: relative;
     align-items: center;
     justify-content: space-around;
 }
-.prueba2 h1 {
-    position:absolute;
-    margin: 0;
-    padding: 0;
-    top: 5%;
-}
+
 /*Estilizamos el texto*/
 .prueba2 h2{
     font-family: 'JetBrains Mono', monospace;
@@ -89,7 +110,7 @@ body{
     border-right: 1px solid black ;
     white-space: nowrap;
     width: 20%;
-    animation: typewriter 2s steps(25) forwards  1s infinite ;
+    animation: typewriter 4s steps(25) forwards  1s infinite     ;
 }
 
 @keyframes typewriter {
@@ -101,4 +122,14 @@ body{
         border-style: none;
       }
     
+}
+
+/*Prueba 3*/
+  /*Estilizamos el texto*/
+.prueba3 h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    text-shadow: 3px 0 0 rgba(255, 0, 0, 0.6),
+                 -4px -2px 0 rgba(0, 255, 0, 0.6),
+                 5px 2px 0 rgba(0, 0, 255, 0.6);
 }
