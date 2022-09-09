@@ -59,10 +59,12 @@ body{
     margin: 20px;
     border: 2px solid black;
     width: 40vw;
-    height:40vh;
-    display: grid;
-    place-items: center;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
     position: relative;
+    align-items: center;
+    justify-content: space-around;
 }
 .prueba2 h1 {
     position:absolute;
@@ -81,12 +83,13 @@ body{
 }
 
 .prueba2 div{
+    margin-top: 50px;
     background: white;
     overflow: hidden;
     border-right: 1px solid black ;
     white-space: nowrap;
     width: 20%;
-    animation: typewriter 2s steps(25) forwards  1s ;
+    animation: typewriter 2s steps(25) forwards  1s infinite ;
 }
 
 @keyframes typewriter {
