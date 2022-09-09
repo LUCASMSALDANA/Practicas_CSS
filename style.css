@@ -254,6 +254,8 @@ header h1{
     padding-right: 5px;
     border-radius: 10px;
     margin: 1px 2px;
+    box-shadow: 0px 0px 4px blueviolet;
+    border: 2px solid blueviolet;
 }
 .imgboxmenu{
     width: 60px;
