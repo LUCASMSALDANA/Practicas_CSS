@@ -41,13 +41,15 @@ header h1{
     margin: 20px;
     border: 2px solid black;
     width: 40vw;
-    height:40vh;
+    height:45vh;
     text-align: center;
     position: relative;
     display: grid;
     place-items: center;
-    box-shadow: 0 0 8px black;
+    box-shadow: 0 0 10px black;
     overflow: hidden;
+    background: rgba(0,0,0,.12);
+    border-radius: 5px;
 }
 
 /*Definimos los h1 del contenedor*/
@@ -289,11 +291,10 @@ header h1{
 }
 
 /*PRUEBA 5 */
-
-.prueba5{
-    background-color: aqua;
+.prueba5 p{
+    position: absolute;
+    top: 87%;
 }
-
 .imgfondoprueba5{
     margin-top: 30px;
     width: 200px;
@@ -301,6 +302,7 @@ header h1{
     background-image: url("img/koalanft.jpg");
     background-size: cover;
     position: relative;
+    overflow: hidden;
 }
 
 .sombraprueba5{
@@ -310,5 +312,36 @@ header h1{
 }
 
 .imgfondoprueba5:hover .sombraprueba5{
-    background-color: rgba(20,30,30,0);
+    background-color: rgba(20,30,30,0.1);
+}
+
+.textolucasprueba5{
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 1.1em;
+    color: orangered;
+    position: absolute;
+    top: 70%; left: -70%;
+    transition: 600ms;
+    padding: 5px;
+}
+
+.imgfondoprueba5:hover .textolucasprueba5{
+    background-color: rgba(60,50,120,.8); left: 0%;
+}
+
+.textojavaprueba5{
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 1.15em;
+    color: green;
+    position: absolute;
+    top: 85.2%; right: -73%;
+    transition: 600ms;
+    padding: 5px;
+}
+
+.imgfondoprueba5:hover .textojavaprueba5{
+    
+    background-color: rgba(20,20,50,.9); right: 0%;
 }
