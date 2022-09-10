@@ -363,15 +363,43 @@ header h1{
 }
 
 /* PRUEBA 6*/
+.prueba6 p{
+    /* Ubicamos el texto Im a Koala debajo de la imagen*/
+    position: absolute;
+    top: 87%;
+    left: 2%;
+}
+.prueba6 h1{
+    z-index: 1000;
+}
 .contprueba6{
-    margin-top: 30px;
-    width: 200px;
-    height: 200px;
+    margin-top: 50px;
+    width: 180px;
+    height: 180px;
+    position: relative;
     transform: rotate(-30deg) skew(30deg);
 }
 
 .contprueba6 img {
+    position: absolute;
+    top: 0;left: 0;
     width: 100%;
-    height: 100%;
     transition: 0.5s;
+  }
+
+.contprueba6:hover img:nth-child(4){
+    transform: translate(100px, -100px);
+    opacity: 1;
+}
+.contprueba6:hover img:nth-child(3){
+    transform: translate(75px, -75px);
+    opacity: .75;
+}
+.contprueba6:hover img:nth-child(2){
+    transform: translate(50px, -50px);
+    opacity: .5;
+}
+.contprueba6:hover img:nth-child(1){
+    transform: translate(25px, -25px);
+    opacity: .25;
 }
