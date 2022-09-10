@@ -292,10 +292,17 @@ header h1{
 
 /*PRUEBA 5 */
 .prueba5 p{
+    /* Ubicamos el texto Im a Koala debajo de la imagen*/
     position: absolute;
     top: 87%;
 }
 .imgfondoprueba5{
+    /*Este es un div, definimos  una altura y un ancho y definimos la imagen de fondo,
+    **ademas de ponerle el tamaño cover a la imagen (que ocupa todo el tamaaño del div
+    **usamos el overflow hidden para ocultar todo elemento que sobresalga del div, por
+    **ultimo le ponemos una posicion relativa, asi podemos uubicar los elementos tanto
+    **dentro como por fuera del div segun deseemos (utilizamos el relative y el overflow
+    **para lograr el efecto deseado */
     margin-top: 30px;
     width: 200px;
     height: 200px;
@@ -306,31 +313,40 @@ header h1{
 }
 
 .sombraprueba5{
+    /*El primer elemento dentro del div imgfondo, es una sombra. que ocupa todo el espacio
+    **del elemento padre contenedor, y por ultimo dentro de este elemento pondremos los 
+    **los textos que queremos q aparezcan en el hover*/
     background-color: rgba(20,30,30,.4);
     position: absolute;
     top: 0;left: 0;right: 0;bottom: 0;
 }
 
 .imgfondoprueba5:hover .sombraprueba5{
+    /*Cuando hagan hove por el primer div, quiero que se cambie el estilo de la sombra*/
     background-color: rgba(20,30,30,0.1);
 }
 
 .textolucasprueba5{
+    /*Estilizamos el texto, y con la posicion absoluta, los dejamos fuera del div 
+    **padre (imgfondoprueba5) de esta manera quedaran ocultos*/
     font-family: 'JetBrains Mono', monospace;
     font-weight: bold;
     font-size: 1.1em;
     color: orangered;
     position: absolute;
     top: 70%; left: -70%;
-    transition: 600ms;
+    transition: 800ms;
     padding: 5px;
 }
 
 .imgfondoprueba5:hover .textolucasprueba5{
-    background-color: rgba(60,50,120,.8); left: 0%;
+    /*Cuando hagan hover por el primer div, quiero cambiar las propiedades del texto
+    **creado anteriormente, le voy a traer dentro de mi div y con un fondo*/
+    background-color: rgba(60,50,120,.8); left: 0%; 
 }
 
 .textojavaprueba5{
+    /*Para el segundo renglo, vuelvo a estilizarlo aplicando la logica del anterior */
     font-family: 'JetBrains Mono', monospace;
     font-weight: bold;
     font-size: 1.15em;
@@ -343,5 +359,18 @@ header h1{
 
 .imgfondoprueba5:hover .textojavaprueba5{
     
-    background-color: rgba(20,20,50,.9); right: 0%;
+    background-color: rgba(20,20,50,.9); right: 0%; 
+}
+
+/* PRUEBA 6*/
+.contprueba6{
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+.contprueba6 img {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
 }
