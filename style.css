@@ -5,7 +5,7 @@
 body{
     margin: 0;
     padding: 0;
-    background: rgba(0,0,0,.22);
+    background: rgba(10,10,10,.42);
 }
 /*Header*/
 header{
@@ -250,8 +250,8 @@ header h1{
     display: flex;
     height: 60px;
     width: 60px;
-    overflow: hidden;
-    transition: 1s;
+    /* overflow: hidden; */
+    transition: .8s;
     color: blueviolet;
     justify-content: space-between;
     padding-right: 5px;
@@ -262,18 +262,10 @@ header h1{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-transform: uppercase;
     position: relative;
+    z-index: 1;
 }
-/* .inicio::after{
-    content: 'INICIO';
-    font-size: 20px;
-    position: absolute;
-    top: calc(50% - 10px);
-    left:0;
-    width: max-content;
-} */
 
 .imgboxmenu{
-
     width: 60px;
     height: 60px;
     margin-right: 10px;
@@ -281,13 +273,19 @@ header h1{
 
 .texto-menu{
     transform: translateX(-100px);
+    transition: 1.2s;
     z-index: -1;
+    opacity: 0;
 }
 .boxmenu:hover{
-    width: 200px;
     color: white;
+    width: 200px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+.boxmenu:hover .texto-menu{
+    color: white;
+    transform: translateX(0);
 }
 
 /*PRUEBA 5 */
@@ -319,6 +317,7 @@ header h1{
     background-color: rgba(20,30,30,.4);
     position: absolute;
     top: 0;left: 0;right: 0;bottom: 0;
+    transition: 800ms;
 }
 
 .imgfondoprueba5:hover .sombraprueba5{
@@ -363,6 +362,7 @@ header h1{
 }
 
 /* PRUEBA 6*/
+
 .prueba6 p{
     /* Ubicamos el texto Im a Koala debajo de la imagen*/
     position: absolute;
@@ -370,36 +370,45 @@ header h1{
     left: 2%;
 }
 .prueba6 h1{
+    /*El z-index, es la posicion STACK de los elementos, en este caso
+    **un index de 1000 nos asegura que el texto SIEMPRE quede arriba*/
     z-index: 1000;
 }
 .contprueba6{
-    margin-top: 50px;
-    width: 180px;
-    height: 180px;
+    margin-top: 100px;
+    width: 150px;
+    height: 150px;
     position: relative;
     transform: rotate(-30deg) skew(30deg);
 }
 
 .contprueba6 img {
+    /*ponemos la posicion absoluta y el top y left de 0, para que todas las 
+    **imagenes queden apiladas una de la otra y el width del 100%*/
     position: absolute;
     top: 0;left: 0;
     width: 100%;
     transition: 0.5s;
   }
 
+
 .contprueba6:hover img:nth-child(4){
     transform: translate(100px, -100px);
+    box-shadow: -2px -2px 8px pink;
     opacity: 1;
 }
 .contprueba6:hover img:nth-child(3){
     transform: translate(75px, -75px);
     opacity: .75;
+    box-shadow: -2px -2px 8px pink;
 }
 .contprueba6:hover img:nth-child(2){
     transform: translate(50px, -50px);
     opacity: .5;
+    box-shadow: -2px -2px 8px pink;
 }
 .contprueba6:hover img:nth-child(1){
     transform: translate(25px, -25px);
     opacity: .25;
+    box-shadow: -2px -2px 8px pink;
 }
