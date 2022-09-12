@@ -442,3 +442,60 @@ header h1{
     opacity: .25;
     box-shadow: -2px -2px 8px pink;
 }
+
+/*Prueba 7*/
+.cardprueba7{
+    width: 75%;
+    height: 60%;
+    border-radius: 2;
+    box-shadow: 0 0 5px blueviolet;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+}
+
+.texto{
+    background-image: url("img/koalanft.jpg");
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: chartreuse;
+}
+
+.sombraprueba7{
+    background-color: rgba(20,30,30,.4);
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto h2{
+    font-size: 3em;
+    margin: 0;
+    height: max-content;
+    text-shadow: 0px 0px 10px blueviolet;
+}
+
+.cardprueba7 div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.cardback{
+    transform: rotateY(180deg);
+    font: 300 14px/20px 'Raleway', sans-serif;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.cardprueba7:hover  {	transform: rotateY(180deg); }
