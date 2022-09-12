@@ -452,20 +452,16 @@ header h1{
     position: relative;
     transform-style: preserve-3d;
     transition: transform 1s;
-}
-
-.card{
-    width: 100%;
-    height: 100%;
+    border: 1px solid rgba(238, 130, 238, 0.6);
 }
 
 .texto{
+
     background-image: url("img/koalanft.jpg");
     background-size: cover;
     background-position: center;
-
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: chartreuse;
+    color: violet;
 }
 
 .sombraprueba7{
@@ -477,7 +473,7 @@ header h1{
     align-items: center;
 }
 
-.texto h2{
+.cardprueba7 h2{
     font-size: 3em;
     margin: 0;
     height: max-content;
