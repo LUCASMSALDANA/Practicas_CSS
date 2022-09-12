@@ -506,13 +506,8 @@ header h1{
     width: 66vw;
     position: relative;
     max-width: 1200px;
-    border-radius: 10px;
     overflow: hidden;
     margin: 0 auto;
-}
-
-.slider-box img{
-    width: 100%;
 }
 
 .slider{
@@ -521,6 +516,7 @@ header h1{
     transition: all 600ms;
     margin: 20px 0;
     padding: 40px 0px;
+
 }
 .itemslide{
     position: relative;
@@ -529,6 +525,10 @@ header h1{
     flex-grow: 0;
     flex-shrink: 0;
     width: 100%;
+}
+
+.itemslide img{
+    border-radius: 20px;
 }
 
 .thumbnail{
@@ -551,7 +551,9 @@ header h1{
     cursor: pointer;
     overflow: hidden;
     margin: 0px 15px;
+    border-radius: 5px;
 }
+
 .thumbnail-item img{
     height: 100%;
 }
