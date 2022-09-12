@@ -33,7 +33,7 @@ header h1{
 /* Definimos el Display de las filas*/
 .fila{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -41,7 +41,7 @@ header h1{
 .container{
     margin: 20px;
     border: 2px solid black;
-    width: 80vw;
+    width: 40vw;
     height:45vh;
     text-align: center;
     position: relative;
@@ -55,22 +55,21 @@ header h1{
 
 /*Definimos los h1 del contenedor*/
 .container h1{
-    position:initial;
+    position:absolute;
     margin: 0;
     padding: 0;
     top: 5%;
 }
 
-@media (min-width:740px){
+@media (max-width:740px){
     .fila{       
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
     }
     .container{
-        width: 40vw;
+        width: 80vw;
     }
     header h1{
-        position: absolute;
+        position: initial;
         width: 100%;
         text-align: center;
         color: green;
@@ -499,7 +498,6 @@ header h1{
     font: 300 14px/20px 'Raleway', sans-serif;
     background-color: black;
 }
-
 
 .cardprueba7:hover  {	transform: rotateY(180deg); }
 
