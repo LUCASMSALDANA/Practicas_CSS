@@ -503,16 +503,21 @@ header h1{
 
 /*PRUEBA 8*/
 
-
 .slider{
     position: absolute;
     display: flex;
     transform: translate3d(0,0,0);
     transition: all 600ms;
-    margin: 20px 0;
-    padding: 40px 6px; 
+    margin: 0 0;
+    padding: 0 6px; 
+    top: 0;left: 0;
     width: 100%;
     height: 100%;
+    z-index: -2;
+}
+.slider img{
+    height: 100%;
+    width: auto;
 }
 .itemslide{
     position: relative;
@@ -563,9 +568,7 @@ header h1{
     transform: scale(1.3);
     opacity: 1;
 }
-input:not(checked) ~ .slider{
-    filter: blur(1rem);
-}
+
 #img1:checked ~  .slider{
     transform: translate3d(0,0,0);
 }
