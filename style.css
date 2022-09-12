@@ -501,3 +501,57 @@ header h1{
 
 .cardprueba7:hover { transform: rotateY(180deg); }
 
+/*PRUEBA 8*/
+.container8{
+    width: 66vw;
+    position: relative;
+    max-width: 1200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+.slider{
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    margin: 20px 0;
+    padding: 40px 0px;
+}
+.itemslide{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.thumbnail{
+    position: absolute;
+    bottom: 20px;left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.thumbnail-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0px 15px;
+}
+.thumbnail-item img{
+    height: 100%;
+}
