@@ -239,6 +239,8 @@ header h1{
 .prueba4{
     align-items: end;
 }
+
+
 .menu-prueba4{
     width: 100%;
     display: flex;
@@ -250,9 +252,9 @@ header h1{
     display: flex;
     height: 60px;
     width: 60px;
-    /* overflow: hidden; */
+    overflow: hidden;
     transition: .8s;
-    color: blueviolet;
+    color: white;
     justify-content: space-between;
     padding-right: 5px;
     border-radius: 10px;
@@ -271,12 +273,38 @@ header h1{
     margin-right: 10px;
 }
 
+.divtexto-menu{
+    text-align: end;
+    width: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.divtexto-menu h2{
+    position: relative;
+}
+.divtexto-menu h2::after{
+    content: '';
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    width: 200%;
+    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
+    background-color: blueviolet;
+    opacity: 1;
+}
+
 .texto-menu{
-    transform: translateX(-100px);
-    transition: 1.2s;
-    z-index: -1;
+    color: white;
+    transition: 1s;
+    transform: translateX(-20%);
     opacity: 0;
 }
+
+.boxmenu:hover h2::after{
+    transition-delay: 1000ms;
+    transition: 2s;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 99%, 100% 53%, 26% 53%, 100% 53%);
+}
+
 .boxmenu:hover{
     color: white;
     width: 200px;
@@ -284,8 +312,10 @@ header h1{
     border-bottom-right-radius: 20px;
 }
 .boxmenu:hover .texto-menu{
+    transition-delay: 200ms;
     color: white;
     transform: translateX(0);
+    opacity: 1;
 }
 
 /*PRUEBA 5 */
