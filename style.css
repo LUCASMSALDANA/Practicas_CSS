@@ -33,31 +33,48 @@ header h1{
 /* Definimos el Display de las filas*/
 .fila{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
 }
+
 /*Definimos el contenedor*/
 .container{
     margin: 20px;
     border: 2px solid black;
-    width: 40vw;
+    width: 80vw;
     height:45vh;
     text-align: center;
     position: relative;
     display: grid;
     place-items: center;
     box-shadow: 0 0 10px black;
-    overflow: hidden;
+    overflow: hidden; 
     background: rgba(0,0,0,.12);
     border-radius: 5px;
 }
 
 /*Definimos los h1 del contenedor*/
 .container h1{
-    position:absolute;
+    position:initial;
     margin: 0;
     padding: 0;
     top: 5%;
+}
+
+@media (min-width:740px){
+    .fila{       
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .container{
+        width: 40vw;
+    }
+    header h1{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: green;
+    }
 }
 
 /* Primera prueba*/
@@ -485,3 +502,4 @@ header h1{
 
 
 .cardprueba7:hover  {	transform: rotateY(180deg); }
+
