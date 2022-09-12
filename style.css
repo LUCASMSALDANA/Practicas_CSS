@@ -282,28 +282,16 @@ header h1{
 .divtexto-menu h2{
     position: relative;
 }
-.divtexto-menu h2::after{
-    content: '';
-    position: absolute;
-    top: 0;left: 0;right: 0;bottom: 0;
-    width: 200%;
-    clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
-    background-color: blueviolet;
-    opacity: 1;
-}
 
 .texto-menu{
     color: white;
     transition: 1s;
     transform: translateX(-20%);
     opacity: 0;
+    filter: blur(.8rem);
 }
 
-.boxmenu:hover h2::after{
-    transition-delay: 1000ms;
-    transition: 2s;
-    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 99%, 100% 53%, 26% 53%, 100% 53%);
-}
+
 
 .boxmenu:hover{
     color: white;
@@ -316,6 +304,7 @@ header h1{
     color: white;
     transform: translateX(0);
     opacity: 1;
+    filter: blur(0);
 }
 
 /*PRUEBA 5 */
